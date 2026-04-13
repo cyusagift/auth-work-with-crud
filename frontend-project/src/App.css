@@ -1,0 +1,178 @@
+.page {
+  padding: 28px 18px 60px;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.muted {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--bg);
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 12px;
+}
+
+.alert {
+  border: 1px solid var(--border);
+  background: var(--soft);
+  color: var(--text-h);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 0 0 16px;
+}
+
+.simpleForm {
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.field span {
+  color: var(--text);
+}
+
+.field input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-h);
+  font: 15px/1.2 var(--sans);
+}
+
+.field input:disabled {
+  opacity: 0.7;
+  background: var(--soft);
+  cursor: not-allowed;
+}
+
+.field input:focus {
+  outline: 2px solid #000;
+  outline-offset: 1px;
+  border-color: #000;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.primary {
+  background: #000;
+  color: #fff;
+}
+
+.btn.danger {
+  background: #fff;
+  color: #000;
+}
+
+.tableWrap {
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border-top: 1px solid var(--border);
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+
+.table thead th {
+  border-top: none;
+  font-size: 13px;
+  color: var(--text);
+  text-align: left;
+}
+
+.table td.num,
+.table th.num {
+  text-align: right;
+}
+
+.actions {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.actions .btn {
+  margin-left: 8px;
+}
+
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table tbody tr:hover {
+  background: var(--soft);
+}
+
+.table tbody tr.selected {
+  background: #000;
+  color: #fff;
+}
+
+.table tbody tr.selected td,
+.table tbody tr.selected .mono {
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 860px) {
+  .row {
+    justify-content: stretch;
+  }
+  .row .btn {
+    flex: 1 1 0;
+  }
+}

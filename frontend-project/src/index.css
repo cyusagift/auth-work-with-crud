@@ -1,0 +1,43 @@
+:root {
+  --text: #111111;
+  --text-h: #000000;
+  --bg: #ffffff;
+  --border: #000000;
+  --soft: #f2f2f2;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 28px;
+  letter-spacing: -0.4px;
+}
+
+p {
+  margin: 0;
+}
